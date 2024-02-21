@@ -17,6 +17,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -268,10 +271,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="product-form__subscription-details subscription-details" href="#">
-                                        <span>
-                                            Subscription details
-                                        </span>
+                                    <div class="product-form__subscription-details subscription-details">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                             viewBox="0 0 15 15" fill="none">
                                             <path
@@ -284,7 +284,19 @@
                                                 d="M1.54153 5.91426C1.50428 5.82401 1.50371 5.72278 1.53993 5.63211C1.57615 5.54143 1.64631 5.46846 1.73549 5.42871C1.82467 5.38895 1.92584 5.38555 2.01749 5.41922C2.10914 5.45289 2.18404 5.52098 2.22628 5.60901L3.35803 8.14402C3.37812 8.18903 3.38915 8.23755 3.39049 8.28683C3.39182 8.3361 3.38344 8.38515 3.36582 8.43119C3.3482 8.47722 3.32169 8.51934 3.2878 8.55512C3.2539 8.59091 3.21329 8.61967 3.16828 8.63977C3.12327 8.65986 3.07474 8.67089 3.02547 8.67222C2.97619 8.67356 2.92714 8.66518 2.8811 8.64756C2.83507 8.62994 2.79296 8.60343 2.75717 8.56953C2.72138 8.53564 2.69262 8.49503 2.67253 8.45001L1.54153 5.91426Z"
                                                 fill="#F25278" />
                                         </svg>
-                                    </a>
+                                        <span>
+                                            Subscription details
+                                        </span>
+                                        <div class="subscription-details__window subscription-window">
+                                            <h4 class="subscription-window__title">
+                                                How subscriptions work
+                                            </h4>
+                                            <p class="subscription-window__text">
+                                                Products are automatically delivered on your schedule. No obligation,
+                                                modify or cancel your subscription anytime.
+                                            </p>
+                                        </div>
+                                    </div>
                                     <button class="product-form__button btn" type="submit">
                                         <span>
                                             add to bag
@@ -965,6 +977,7 @@
                                 </svg>
                             </div>
                         </div>
+
                         <div class="section__wrapper">
                             <div class="results__inner">
                                 <div class="results__body results-body">
@@ -1032,42 +1045,142 @@
                                 </div>
                                 <div class="results__swiper results-swiper swiper">
                                     <div class="swiper-wrapper">
-                                        <div class="results-swiper__slide results-slide swiper-slide">
-                                            <div class="results-slide__inner">
-                                                <div class="results-slide__text">
-                                                    Before
+                                        <div class="results-swiper__slide results-slide swiper-slide" id="results-slide-1">
+                                            <div id="page">
+                                                <div class="wrapper">
+                                                    <div class="before">
+                                                        <div class="results-slide__text">
+                                                            After
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-2.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="after">
+                                                        <div class="results-slide__text">
+                                                            Before
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-1.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="scroller">
+                                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg"
+                                                            width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                                            <script xmlns="" />
+                                                            <circle cx="32" cy="32" r="31.5" stroke="white" />
+                                                            <path d="M13.264 26.4099L8.29688 32.2049L13.264 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M50.736 26.4099L55.7031 32.2049L50.736 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <script xmlns="" />
+                                                        </svg>
+                                                    </div>
                                                 </div>
-                                                <div class="results-slide__text">
-                                                    After
-                                                </div>
-                                                <img class="results-slide__img" src="images/results-img-1.jpg"
-                                                    alt="img">
                                             </div>
                                         </div>
-                                        <div class="results-swiper__slide results-slide swiper-slide">
-                                            <div class="results-slide__inner">
-                                                <div class="results-slide__text">
-                                                    Before
+                                        <div class="results-swiper__slide results-slide swiper-slide" id="results-slide-2">
+                                            <div id="page">
+                                                <div class="wrapper">
+                                                    <div class="before">
+                                                        <div class="results-slide__text">
+                                                            After
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-4.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="after">
+                                                        <div class="results-slide__text">
+                                                            Before
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-3.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="scroller">
+                                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg"
+                                                            width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                                            <script xmlns="" />
+                                                            <circle cx="32" cy="32" r="31.5" stroke="white" />
+                                                            <path d="M13.264 26.4099L8.29688 32.2049L13.264 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M50.736 26.4099L55.7031 32.2049L50.736 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <script xmlns="" />
+                                                        </svg>
+                                                    </div>
                                                 </div>
-                                                <div class="results-slide__text">
-                                                    After
-                                                </div>
-                                                <img class="results-slide__img" src="images/results-img-1.jpg"
-                                                    alt="img">
                                             </div>
                                         </div>
-                                        <div class="results-swiper__slide results-slide swiper-slide">
-                                            <div class="results-slide__inner">
-                                                <div class="results-slide__text">
-                                                    Before
+                                        <div class="results-swiper__slide results-slide swiper-slide" id="results-slide-3">
+                                            <div id="page">
+                                                <div class="wrapper">
+                                                    <div class="before">
+                                                        <div class="results-slide__text">
+                                                            After
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-6.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="after">
+                                                        <div class="results-slide__text">
+                                                            Before
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-5.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="scroller">
+                                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg"
+                                                            width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                                            <script xmlns="" />
+                                                            <circle cx="32" cy="32" r="31.5" stroke="white" />
+                                                            <path d="M13.264 26.4099L8.29688 32.2049L13.264 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M50.736 26.4099L55.7031 32.2049L50.736 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <script xmlns="" />
+                                                        </svg>
+                                                    </div>
                                                 </div>
-                                                <div class="results-slide__text">
-                                                    After
-                                                </div>
-                                                <img class="results-slide__img" src="images/results-img-1.jpg"
-                                                    alt="img">
                                             </div>
                                         </div>
+                                        <div class="results-swiper__slide results-slide swiper-slide" id="results-slide-4">
+                                            <div id="page">
+                                                <div class="wrapper">
+                                                    <div class="before">
+                                                        <div class="results-slide__text">
+                                                            After
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-8.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="after">
+                                                        <div class="results-slide__text">
+                                                            Before
+                                                        </div>
+                                                        <img class="content-image" src="images/results-img-7.jpg"
+                                                            draggable="false" />
+                                                    </div>
+                                                    <div class="scroller">
+                                                        <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg"
+                                                            width="64" height="64" viewBox="0 0 64 64" fill="none">
+                                                            <script xmlns="" />
+                                                            <circle cx="32" cy="32" r="31.5" stroke="white" />
+                                                            <path d="M13.264 26.4099L8.29688 32.2049L13.264 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M50.736 26.4099L55.7031 32.2049L50.736 37.9999"
+                                                                stroke="white" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <script xmlns="" />
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> 
                                     </div>
                                     <div class="results-swiper__pagination pagination"></div>
                                     <div class="results-swiper__arrow results-swiper__arrow--prev arrow arrow--prev">
@@ -1524,43 +1637,43 @@
                                         Select the desired day so that we can make a calendar for using patches.
                                     </p>
                                     <form class="when-body__form when-form" action="#" method="post">
-                                        <div class="when-form__item when-form__item--active">
+                                        <div class="when-form__item when-form__item--active" id="0">
                                             <input class="when-form__item-radio" type="radio" checked="true">
                                             <span>
                                                 Monday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="1">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Tuesday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="2">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Wednesday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="3">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Thursday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="4">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Friday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="5">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Saturday
                                             </span>
                                         </div>
-                                        <div class="when-form__item">
+                                        <div class="when-form__item" id="6">
                                             <input class="when-form__item-radio" type="radio">
                                             <span>
                                                 Sunday
@@ -1569,16 +1682,78 @@
                                     </form>
                                 </div>
                             </div>
-                            <a class="when__schedule schedule" data-fancybox="images/schedule-img.jpg"
-                                href="images/schedule-img.jpg">
-                                <img class="schedule__img" src="images/schedule-img.jpg" alt="img">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
-                                    fill="none">
-                                    <path
-                                        d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
-                                        fill="#87C4EF" />
-                                </svg>
-                            </a>
+                            <div class="when__wrapper">
+                                <a class="when__schedule schedule schedule--active" id="0"
+                                    data-fancybox="images/schedule-img-1.jpg" href="images/schedule-img-1.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-1.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="1" data-fancybox="images/schedule-img-2.jpg"
+                                    href="images/schedule-img-2.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-2.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="2" data-fancybox="images/schedule-img-3.jpg"
+                                    href="images/schedule-img-3.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-3.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="3" data-fancybox="images/schedule-img-4.jpg"
+                                    href="images/schedule-img-4.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-4.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="4" data-fancybox="images/schedule-img-5.jpg"
+                                    href="images/schedule-img-5.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-5.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="5" data-fancybox="images/schedule-img-6.jpg"
+                                    href="images/schedule-img-6.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-6.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                                <a class="when__schedule schedule" id="6" data-fancybox="images/schedule-img-7.jpg"
+                                    href="images/schedule-img-7.jpg">
+                                    <img class="schedule__img" src="images/schedule-img-7.jpg" alt="img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29"
+                                        fill="none">
+                                        <path
+                                            d="M23.5637 11.7795C23.5637 14.3789 22.7197 16.7802 21.2979 18.7283L28.469 25.9036C29.177 26.6115 29.177 27.7612 28.469 28.4691C27.7609 29.177 26.6111 29.177 25.903 28.4691L18.732 21.2938C16.7834 22.7209 14.3818 23.559 11.7818 23.559C5.2735 23.559 0 18.2866 0 11.7795C0 5.27247 5.2735 0 11.7818 0C18.2901 0 23.5637 5.27247 23.5637 11.7795ZM10.4224 16.7632C10.4224 17.5164 11.0285 18.1223 11.7818 18.1223C12.5352 18.1223 13.1413 17.5164 13.1413 16.7632V13.1387H16.7664C17.5198 13.1387 18.1259 12.5327 18.1259 11.7795C18.1259 11.0263 17.5198 10.4203 16.7664 10.4203H13.1413V6.79588C13.1413 6.04267 12.5352 5.4367 11.7818 5.4367C11.0285 5.4367 10.4224 6.04267 10.4224 6.79588V10.4203H6.79721C6.04385 10.4203 5.43777 11.0263 5.43777 11.7795C5.43777 12.5327 6.04385 13.1387 6.79721 13.1387H10.4224V16.7632Z"
+                                            fill="#87C4EF" />
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -2544,6 +2719,482 @@
                                 </div>
                             </div>
                             <div class="reviews__wrapper" id="1">
+                                <div class="reviews__inner">
+                                    <form class="reviews__form reviews-form" action="#">
+                                        <div class="reviews-form__wrapper">
+                                            <div class="reviews-form__box">
+                                                <label class="reviews-form__box-label" for="">
+                                                    Name
+                                                </label>
+                                                <input class="reviews-form__box-input" type="text">
+                                            </div>
+                                            <div class="reviews-form__box">
+                                                <label class="reviews-form__box-label" for="">
+                                                    Email Address
+                                                </label>
+                                                <input class="reviews-form__box-input" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="reviews-form__box">
+                                            <label class="reviews-form__box-label" for="">
+                                                Your Quetions
+                                            </label>
+                                            <textarea class="reviews-form__box-textarea"></textarea>
+                                        </div>
+                                        <div class="reviews-form__buttos">
+                                            <button class="reviews-form__buttons-button btn" type="submit">
+                                                Ask are quetions
+                                            </button>
+                                            <button class="reviews-form__buttons-button btn--white" type="reset">
+                                                cancel
+                                            </button>
+                                        </div>
+                                    </form>
+                                    <div class="reviews__review review">
+                                        <div class="review__top review-top">
+                                            <div class="review-top__person person person--verified">
+                                                <div class="person__img">
+                                                    <img class="person__img-image" src="images/person-img-1.png"
+                                                        alt="img">
+                                                    <svg class="person__img-verified" xmlns="http://www.w3.org/2000/svg"
+                                                        width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                        <path
+                                                            d="M6.86001 12.9323C6.62833 13.0217 6.37168 13.0217 6.14001 12.9323C4.33228 12.2383 2.7776 11.0123 1.68135 9.41608C0.585095 7.8199 -0.00116622 5.92872 6.4076e-06 3.99235V1.38235C-0.000542329 1.27285 0.034167 1.16608 0.0990003 1.07783C0.163834 0.989588 0.255348 0.924553 0.360006 0.892348C4.36688 -0.297449 8.63313 -0.297449 12.64 0.892348C12.7447 0.924553 12.8362 0.989588 12.901 1.07783C12.9658 1.16608 13.0006 1.27285 13 1.38235V3.99235C13.0012 5.92872 12.4149 7.8199 11.3187 9.41608C10.2224 11.0123 8.66774 12.2383 6.86001 12.9323Z"
+                                                            fill="#1BC185" />
+                                                        <path
+                                                            d="M5.53458 9C5.40052 9 5.26646 8.94892 5.16391 8.84642L3.15341 6.8314C3.10486 6.78306 3.06627 6.72529 3.03992 6.6615C3.01357 6.59771 3 6.52919 3 6.45996C3 6.39074 3.01357 6.32222 3.03992 6.25843C3.06627 6.19464 3.10486 6.13687 3.15341 6.08853C3.25258 5.98988 3.38559 5.93467 3.52408 5.93467C3.66257 5.93467 3.79559 5.98988 3.89475 6.08853L5.53458 7.73177L9.1051 4.15386C9.20426 4.05521 9.33727 4 9.47577 4C9.61426 4 9.74727 4.05521 9.84644 4.15386C9.89504 4.20218 9.93366 4.25994 9.96004 4.32373C9.98641 4.38752 10 4.45606 10 4.5253C10 4.59453 9.98641 4.66307 9.96004 4.72686C9.93366 4.79065 9.89504 4.84841 9.84644 4.89673L5.90525 8.84607C5.80639 8.9452 5.67318 9.00051 5.53458 9Z"
+                                                            fill="#F4F4F4" />
+                                                    </svg>
+                                                </div>
+                                                <div class="person__inner">
+                                                    <div class="person__name">
+                                                        Mary A.
+                                                        <span class="person__name-verified">
+                                                            Verified buyer
+                                                        </span>
+                                                    </div>
+                                                    <div class="person__country person-country">
+                                                        <div class="person-country__img">
+                                                            <img class="person-country__img-image"
+                                                                src="images/country-flag-1.svg" alt="flag">
+                                                        </div>
+                                                        <div class="person-country__name">
+                                                            USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <time class="review-top__date">
+                                                05 / 01 / 2021
+                                            </time>
+                                        </div>
+                                        <div class="review__raiting review-raiting">
+                                            <div class="review-raiting__rait rait">
+                                                <div class="rait__stars">
+                                                    <div class="rait__stars-inner">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-raiting__comment">
+                                                This Is The Best Product Ever
+                                            </p>
+                                        </div>
+                                        <p class="review-raiting__text">
+                                            I have literally never left a product review in my life, basically because
+                                            nothing
+                                            has ever worked for me. As confirmed by my dermatologist, my skin is acne
+                                            prone,
+                                            sensitive to literally everything and combination. And I'm 30, which means
+                                            my
+                                            skin
+                                            is changing a lot right now.
+                                        </p>
+                                    </div>
+                                    <div class="reviews__review review">
+                                        <div class="review__top review-top">
+                                            <div class="review-top__person person person--verified">
+                                                <div class="person__img">
+                                                    <img class="person__img-image" src="images/person-img-1.png"
+                                                        alt="img">
+                                                    <svg class="person__img-verified" xmlns="http://www.w3.org/2000/svg"
+                                                        width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                        <path
+                                                            d="M6.86001 12.9323C6.62833 13.0217 6.37168 13.0217 6.14001 12.9323C4.33228 12.2383 2.7776 11.0123 1.68135 9.41608C0.585095 7.8199 -0.00116622 5.92872 6.4076e-06 3.99235V1.38235C-0.000542329 1.27285 0.034167 1.16608 0.0990003 1.07783C0.163834 0.989588 0.255348 0.924553 0.360006 0.892348C4.36688 -0.297449 8.63313 -0.297449 12.64 0.892348C12.7447 0.924553 12.8362 0.989588 12.901 1.07783C12.9658 1.16608 13.0006 1.27285 13 1.38235V3.99235C13.0012 5.92872 12.4149 7.8199 11.3187 9.41608C10.2224 11.0123 8.66774 12.2383 6.86001 12.9323Z"
+                                                            fill="#1BC185" />
+                                                        <path
+                                                            d="M5.53458 9C5.40052 9 5.26646 8.94892 5.16391 8.84642L3.15341 6.8314C3.10486 6.78306 3.06627 6.72529 3.03992 6.6615C3.01357 6.59771 3 6.52919 3 6.45996C3 6.39074 3.01357 6.32222 3.03992 6.25843C3.06627 6.19464 3.10486 6.13687 3.15341 6.08853C3.25258 5.98988 3.38559 5.93467 3.52408 5.93467C3.66257 5.93467 3.79559 5.98988 3.89475 6.08853L5.53458 7.73177L9.1051 4.15386C9.20426 4.05521 9.33727 4 9.47577 4C9.61426 4 9.74727 4.05521 9.84644 4.15386C9.89504 4.20218 9.93366 4.25994 9.96004 4.32373C9.98641 4.38752 10 4.45606 10 4.5253C10 4.59453 9.98641 4.66307 9.96004 4.72686C9.93366 4.79065 9.89504 4.84841 9.84644 4.89673L5.90525 8.84607C5.80639 8.9452 5.67318 9.00051 5.53458 9Z"
+                                                            fill="#F4F4F4" />
+                                                    </svg>
+                                                </div>
+                                                <div class="person__inner">
+                                                    <div class="person__name">
+                                                        Hien T.
+                                                        <span class="person__name-verified">
+                                                            Verified buyer
+                                                        </span>
+                                                    </div>
+                                                    <div class="person__country person-country">
+                                                        <div class="person-country__img">
+                                                            <img class="person-country__img-image"
+                                                                src="images/country-flag-1.svg" alt="flag">
+                                                        </div>
+                                                        <div class="person-country__name">
+                                                            USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <time class="review-top__date">
+                                                03 / 01 / 2021
+                                            </time>
+                                        </div>
+                                        <div class="review__raiting review-raiting">
+                                            <div class="review-raiting__rait rait">
+                                                <div class="rait__stars">
+                                                    <div class="rait__stars-inner">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-raiting__comment">
+                                                Love This!! It Works.
+                                            </p>
+                                        </div>
+                                        <p class="review-raiting__text">
+                                            I have dry, sensitive skin that is prone to breakouts, uneven texture.
+                                            Started
+                                            using
+                                            this 6 weeks ago (worked up to daily use) and saw a major difference early
+                                            on.
+                                        </p>
+                                    </div>
+                                    <div class="reviews__review review">
+                                        <div class="review__top review-top">
+                                            <div class="review-top__person person person--verified">
+                                                <div class="person__img">
+                                                    <img class="person__img-image" src="images/person-img-1.png"
+                                                        alt="img">
+                                                    <svg class="person__img-verified" xmlns="http://www.w3.org/2000/svg"
+                                                        width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                        <path
+                                                            d="M6.86001 12.9323C6.62833 13.0217 6.37168 13.0217 6.14001 12.9323C4.33228 12.2383 2.7776 11.0123 1.68135 9.41608C0.585095 7.8199 -0.00116622 5.92872 6.4076e-06 3.99235V1.38235C-0.000542329 1.27285 0.034167 1.16608 0.0990003 1.07783C0.163834 0.989588 0.255348 0.924553 0.360006 0.892348C4.36688 -0.297449 8.63313 -0.297449 12.64 0.892348C12.7447 0.924553 12.8362 0.989588 12.901 1.07783C12.9658 1.16608 13.0006 1.27285 13 1.38235V3.99235C13.0012 5.92872 12.4149 7.8199 11.3187 9.41608C10.2224 11.0123 8.66774 12.2383 6.86001 12.9323Z"
+                                                            fill="#1BC185" />
+                                                        <path
+                                                            d="M5.53458 9C5.40052 9 5.26646 8.94892 5.16391 8.84642L3.15341 6.8314C3.10486 6.78306 3.06627 6.72529 3.03992 6.6615C3.01357 6.59771 3 6.52919 3 6.45996C3 6.39074 3.01357 6.32222 3.03992 6.25843C3.06627 6.19464 3.10486 6.13687 3.15341 6.08853C3.25258 5.98988 3.38559 5.93467 3.52408 5.93467C3.66257 5.93467 3.79559 5.98988 3.89475 6.08853L5.53458 7.73177L9.1051 4.15386C9.20426 4.05521 9.33727 4 9.47577 4C9.61426 4 9.74727 4.05521 9.84644 4.15386C9.89504 4.20218 9.93366 4.25994 9.96004 4.32373C9.98641 4.38752 10 4.45606 10 4.5253C10 4.59453 9.98641 4.66307 9.96004 4.72686C9.93366 4.79065 9.89504 4.84841 9.84644 4.89673L5.90525 8.84607C5.80639 8.9452 5.67318 9.00051 5.53458 9Z"
+                                                            fill="#F4F4F4" />
+                                                    </svg>
+                                                </div>
+                                                <div class="person__inner">
+                                                    <div class="person__name">
+                                                        Karen G.
+                                                        <span class="person__name-verified">
+                                                            Verified buyer
+                                                        </span>
+                                                    </div>
+                                                    <div class="person__country person-country">
+                                                        <div class="person-country__img">
+                                                            <img class="person-country__img-image"
+                                                                src="images/country-flag-1.svg" alt="flag">
+                                                        </div>
+                                                        <div class="person-country__name">
+                                                            USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <time class="review-top__date">
+                                                01 / 01 / 2021
+                                            </time>
+                                        </div>
+                                        <div class="review__raiting review-raiting">
+                                            <div class="review-raiting__rait rait">
+                                                <div class="rait__stars">
+                                                    <div class="rait__stars-inner">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-raiting__comment">
+                                                Great Product!
+                                            </p>
+                                        </div>
+                                        <p class="review-raiting__text">
+                                            Love it! I am 60 and love the way it soaks in and adds hydration to my face
+                                            - I
+                                            saw
+                                            a difference in brightness as well - I will purchase <br>
+                                            again!
+                                        </p>
+                                    </div>
+                                    <div class="reviews__review review review--hidden">
+                                        <div class="review__top review-top">
+                                            <div class="review-top__person person person--verified">
+                                                <div class="person__img">
+                                                    <img class="person__img-image" src="images/person-img-1.png"
+                                                        alt="img">
+                                                    <svg class="person__img-verified" xmlns="http://www.w3.org/2000/svg"
+                                                        width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                        <path
+                                                            d="M6.86001 12.9323C6.62833 13.0217 6.37168 13.0217 6.14001 12.9323C4.33228 12.2383 2.7776 11.0123 1.68135 9.41608C0.585095 7.8199 -0.00116622 5.92872 6.4076e-06 3.99235V1.38235C-0.000542329 1.27285 0.034167 1.16608 0.0990003 1.07783C0.163834 0.989588 0.255348 0.924553 0.360006 0.892348C4.36688 -0.297449 8.63313 -0.297449 12.64 0.892348C12.7447 0.924553 12.8362 0.989588 12.901 1.07783C12.9658 1.16608 13.0006 1.27285 13 1.38235V3.99235C13.0012 5.92872 12.4149 7.8199 11.3187 9.41608C10.2224 11.0123 8.66774 12.2383 6.86001 12.9323Z"
+                                                            fill="#1BC185" />
+                                                        <path
+                                                            d="M5.53458 9C5.40052 9 5.26646 8.94892 5.16391 8.84642L3.15341 6.8314C3.10486 6.78306 3.06627 6.72529 3.03992 6.6615C3.01357 6.59771 3 6.52919 3 6.45996C3 6.39074 3.01357 6.32222 3.03992 6.25843C3.06627 6.19464 3.10486 6.13687 3.15341 6.08853C3.25258 5.98988 3.38559 5.93467 3.52408 5.93467C3.66257 5.93467 3.79559 5.98988 3.89475 6.08853L5.53458 7.73177L9.1051 4.15386C9.20426 4.05521 9.33727 4 9.47577 4C9.61426 4 9.74727 4.05521 9.84644 4.15386C9.89504 4.20218 9.93366 4.25994 9.96004 4.32373C9.98641 4.38752 10 4.45606 10 4.5253C10 4.59453 9.98641 4.66307 9.96004 4.72686C9.93366 4.79065 9.89504 4.84841 9.84644 4.89673L5.90525 8.84607C5.80639 8.9452 5.67318 9.00051 5.53458 9Z"
+                                                            fill="#F4F4F4" />
+                                                    </svg>
+                                                </div>
+                                                <div class="person__inner">
+                                                    <div class="person__name">
+                                                        Hien T.
+                                                        <span class="person__name-verified">
+                                                            Verified buyer
+                                                        </span>
+                                                    </div>
+                                                    <div class="person__country person-country">
+                                                        <div class="person-country__img">
+                                                            <img class="person-country__img-image"
+                                                                src="images/country-flag-1.svg" alt="flag">
+                                                        </div>
+                                                        <div class="person-country__name">
+                                                            USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <time class="review-top__date">
+                                                03 / 01 / 2021
+                                            </time>
+                                        </div>
+                                        <div class="review__raiting review-raiting">
+                                            <div class="review-raiting__rait rait">
+                                                <div class="rait__stars">
+                                                    <div class="rait__stars-inner">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-raiting__comment">
+                                                Love This!! It Works.
+                                            </p>
+                                        </div>
+                                        <p class="review-raiting__text">
+                                            I have dry, sensitive skin that is prone to breakouts, uneven texture.
+                                            Started
+                                            using
+                                            this 6 weeks ago (worked up to daily use) and saw a major difference early
+                                            on.
+                                        </p>
+                                    </div>
+                                    <div class="reviews__review review review--hidden">
+                                        <div class="review__top review-top">
+                                            <div class="review-top__person person person--verified">
+                                                <div class="person__img">
+                                                    <img class="person__img-image" src="images/person-img-1.png"
+                                                        alt="img">
+                                                    <svg class="person__img-verified" xmlns="http://www.w3.org/2000/svg"
+                                                        width="13" height="13" viewBox="0 0 13 13" fill="none">
+                                                        <path
+                                                            d="M6.86001 12.9323C6.62833 13.0217 6.37168 13.0217 6.14001 12.9323C4.33228 12.2383 2.7776 11.0123 1.68135 9.41608C0.585095 7.8199 -0.00116622 5.92872 6.4076e-06 3.99235V1.38235C-0.000542329 1.27285 0.034167 1.16608 0.0990003 1.07783C0.163834 0.989588 0.255348 0.924553 0.360006 0.892348C4.36688 -0.297449 8.63313 -0.297449 12.64 0.892348C12.7447 0.924553 12.8362 0.989588 12.901 1.07783C12.9658 1.16608 13.0006 1.27285 13 1.38235V3.99235C13.0012 5.92872 12.4149 7.8199 11.3187 9.41608C10.2224 11.0123 8.66774 12.2383 6.86001 12.9323Z"
+                                                            fill="#1BC185" />
+                                                        <path
+                                                            d="M5.53458 9C5.40052 9 5.26646 8.94892 5.16391 8.84642L3.15341 6.8314C3.10486 6.78306 3.06627 6.72529 3.03992 6.6615C3.01357 6.59771 3 6.52919 3 6.45996C3 6.39074 3.01357 6.32222 3.03992 6.25843C3.06627 6.19464 3.10486 6.13687 3.15341 6.08853C3.25258 5.98988 3.38559 5.93467 3.52408 5.93467C3.66257 5.93467 3.79559 5.98988 3.89475 6.08853L5.53458 7.73177L9.1051 4.15386C9.20426 4.05521 9.33727 4 9.47577 4C9.61426 4 9.74727 4.05521 9.84644 4.15386C9.89504 4.20218 9.93366 4.25994 9.96004 4.32373C9.98641 4.38752 10 4.45606 10 4.5253C10 4.59453 9.98641 4.66307 9.96004 4.72686C9.93366 4.79065 9.89504 4.84841 9.84644 4.89673L5.90525 8.84607C5.80639 8.9452 5.67318 9.00051 5.53458 9Z"
+                                                            fill="#F4F4F4" />
+                                                    </svg>
+                                                </div>
+                                                <div class="person__inner">
+                                                    <div class="person__name">
+                                                        Karen G.
+                                                        <span class="person__name-verified">
+                                                            Verified buyer
+                                                        </span>
+                                                    </div>
+                                                    <div class="person__country person-country">
+                                                        <div class="person-country__img">
+                                                            <img class="person-country__img-image"
+                                                                src="images/country-flag-1.svg" alt="flag">
+                                                        </div>
+                                                        <div class="person-country__name">
+                                                            USA
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <time class="review-top__date">
+                                                01 / 01 / 2021
+                                            </time>
+                                        </div>
+                                        <div class="review__raiting review-raiting">
+                                            <div class="review-raiting__rait rait">
+                                                <div class="rait__stars">
+                                                    <div class="rait__stars-inner">
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M6.34435 0.807617L7.79506 5.27243H12.4896L8.69164 8.03184L10.1423 12.4966L6.34435 9.73724L2.54635 12.4966L3.99706 8.03184L0.199063 5.27243H4.89365L6.34435 0.807617Z"
+                                                                fill="#FFB800"></path>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="review-raiting__comment">
+                                                Great Product!
+                                            </p>
+                                        </div>
+                                        <p class="review-raiting__text">
+                                            Love it! I am 60 and love the way it soaks in and adds hydration to my face
+                                            - I
+                                            saw
+                                            a difference in brightness as well - I will purchase <br>
+                                            again!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="reviews__wrap">
+                                    <div class="reviews__link btn--white">
+                                        <span> show more</span>
+                                        <span> show less</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
